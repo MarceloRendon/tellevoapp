@@ -9,6 +9,7 @@ export class AppComponent {
     { title: 'Home', url: '/inicio', icon: 'browsers' },
     { title: 'Login', url: '/login', icon: 'person' },
     { title: 'Restaurar', url: '/restaurar', icon: 'key' },
+    { title: 'Choferes', url: '/choferes', icon: 'car' },
   ];
 
   constructor() {}

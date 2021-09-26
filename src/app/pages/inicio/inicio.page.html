@@ -3,18 +3,20 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Inicio</ion-title>
+    <img src="../../../assets/images/logos/logoduoc.png" id="img-logo-login"  width="140" height="30" />
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title>Inicio</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
 
   <div id="container">
-    <p>llenar</p>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-button shape="block" [routerLink]="['/choferes']">Ver choferes disponibles</ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
