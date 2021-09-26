@@ -8,13 +8,31 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title>Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <form action="" #formulario>
+    <ion-row>
+      <ion-col>
+        <ion-item id="rounded">
+          <ion-label floating>Usuario:</ion-label>
+          <ion-input type="text" required name="usuario" ngModel></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <p>llenar</p>
-  </div>
+    <ion-row>
+      <ion-col>
+        <ion-item id="rounded">
+          <ion-label floating>Password:</ion-label>
+          <ion-input type="password" required name="password" ngModel></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
