@@ -8,5 +8,17 @@
 </ion-header>
 
 <ion-content>
+  <ion-list *ngIf="losChoferes">
+    <ion-item *ngFor='let chofer of losChoferes'>
+      <ion-avatar slot="start">
+        <img [src]='chofer.image'>
+      </ion-avatar>
 
+      <ion-label>
+        <h4>{{chofer.name}}</h4>
+        <h4>{{chofer.car}}</h4>
+        <h4>{{chofer.email}}</h4>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
